@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'testAMDB_Example' do
+  pod 'testAMDB', :path => '../'
+
+  target 'testAMDB_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  end
+end
